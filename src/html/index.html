@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo: Bootstrap / npm / webpack</title>
+</head>
+
+<body>
+<nav class="navbar navbar-light navbar-expand-md" role="tablist">
+    <div class="container-fluid"><a class="navbar-brand" href="#"><strong>Space Mission System</strong></a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span
+                class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-2">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="addMission.html">Missie toevoegen</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Detail</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-3">
+    <h1>Ruimtemissies</h1><a class="btn btn-success mb-3 fw-semibold" role="button" href="addMission.html">Missie
+    toevoegen</a>
+    <div class="row gy-4">
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a class="text-dark text-decoration-none" href="#">
+                <div class="card shadow border-0">
+                    <img class="card-img-top w-100 d-block"
+                         src="https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Apollo 11</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- TODO: Tabs toevoegen -->
+<div class="container mt-5 border border-3 p-3 rounded-3">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button">Home
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab">Profile
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button">Contact
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                    type="button" disabled>Disabled
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+             tabindex="0">tab 1
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">tab
+            2
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            ...
+        </div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+            ...
+        </div>
+    </div>
+</div>
+</body>
+</html>
