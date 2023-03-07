@@ -166,10 +166,155 @@
             </div>
         </div>
 
-        </div>
         <!-- Detail tab -->
         <div class="tab-pane" id="detail" role="tabpanel" aria-labelledby="detail-tab">
-            hello
+            <div id="typeButtons" class="mb-3 mt-4">
+                <button type="button" id="btnAddMissionView" class="btn btn-primary">Add mission</button>
+                <button type="button" id="btnEditMissionView" class="btn btn-secondary">Edit mission</button>
+            </div>
+
+            <div id="add-mission" class="view" data-view-name="add-mission" data-view-group="detail-tab">
+                <h1>Missie toevoegen</h1>
+                <p class="lead">Van plan om naar de ruimte te gaan? Voeg hier je missie toe zodat de NASA hier zeker van
+                    op
+                    de hoogte is, en dat de chinezen je niet uit de lucht schieten met hun hoogtechnologische op Alibaba
+                    gekochte spionagebalon!</p>
+                <form class="border border-5 p-2 rounded-3 mb-5 mt-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="form-label fw-semibold d-none d-sm-block">Naam van de missie</label>
+                            <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                 viewBox="0 0 16 16"
+                                 class="bi bi-tag">
+                              <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"></path>
+                              <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"></path>
+                            </svg>
+                          </span>
+                                <input class="form-control" type="text" placeholder="Geef de missie een naam...">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <label class="form-label fw-semibold d-none d-sm-block">Beschrijf de missie</label>
+                            <textarea class="form-control"
+                                      placeholder="Vertel ons wat meer over wat de missie precies inhoudt..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Lanceerdatum</label>
+                            <input class="form-control" type="date" placeholder="hi">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold pt-3 pt-md-0">Status</label>
+                            <select class="form-select">
+                                <option value="planned" selected="">Gepland</option>
+                                <option value="lucky">Geluksvogels</option>
+                                <option value="successful">Succesvol voltooid</option>
+                                <option value="">Gecrasht</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold mb-0">Afbeeldingslink</label>
+                            <p class="fw-light">Aub enkel afbeeldingen van het formaat 400x200</p>
+                            <div class="input-group">
+                              <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                     viewBox="0 0 16 16" class="bi bi-link">
+                                  <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path>
+                                  <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path>
+                                </svg>
+                              </span>
+                                <input class="form-control" type="text" placeholder="Link naar de afbeelding...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold mb-0 pt-3 pt-md-0">Liter brandstof nodig</label>
+                            <p class="fw-light">Liever te veel schatten dan te weinig..</p>
+                            <input class="form-control" type="number" min="10" max="1000000000"
+                                   placeholder="Vul het aantal liter in...">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-primary fw-semibold rounded-1" type="button">Missie toevoegen
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="edit-mission" class="view d-none" data-view-name="edit-mission" data-view-group="detail-tab">
+                <h1>Missie bewerken</h1>
+                <p class="lead">Toch iets niet volgens plan verlopen? Of gewoon te vergeten vermelden dat je hoogtevrees
+                    hebt? Geen zorgen, geef het hier door, dan heeft de spionageballon uit China weer wat minder werk te
+                    doen!</p>
+                <form class="border border-5 p-2 rounded-3 mb-5 mt-3">
+                    <div class="row">
+                        <div class="col-12"><label class="form-label fw-semibold">Naam van de missie</label>
+                            <div class="input-group"><span class="input-group-text"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-tag">
+                                <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"></path>
+                                <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"></path>
+                            </svg></span><input class="form-control" type="text"
+                                                placeholder="Geef de missie een naam..."></div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-12"><label class="form-label fw-semibold">Beschrijf de missie</label><textarea
+                                class="form-control"
+                                placeholder="Vertel ons wat meer over wat de missie precies inhoudt..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="form-label fw-semibold">Lanceerdatum</label><input
+                                class="form-control" type="date"></div>
+                        <div class="col-md-6"><label class="form-label fw-semibold">Status</label><select
+                                class="form-select">
+                            <option value="planned" selected="">Gepland</option>
+                            <option value="lucky">Geluksvogels</option>
+                            <option value="successful">Succesvol voltooid</option>
+                            <option value="">Gecrasht</option>
+                        </select></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="form-label fw-semibold mb-0">Afbeeldingslink</label>
+                            <p class="fw-light">Aub enkel afbeeldingen van het formaat 400x200</p>
+                            <div class="input-group"><span class="input-group-text"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="1em" height="1em"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-link">
+                                <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"></path>
+                                <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"></path>
+                            </svg></span><input class="form-control" type="text"
+                                                placeholder="Link naar de afbeelding..."></div>
+                        </div>
+                        <div class="col-md-6"><label class="form-label fw-semibold mb-0">Liter brandstof nodig</label>
+                            <p class="fw-light">Liever te veel schatten dan te weinig..</p><input class="form-control"
+                                                                                                  type="number" min="10"
+                                                                                                  max="1000000000"
+                                                                                                  placeholder="Vul het aantal liter in...">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-primary fw-semibold rounded-1" type="button">Missie bewerken</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
