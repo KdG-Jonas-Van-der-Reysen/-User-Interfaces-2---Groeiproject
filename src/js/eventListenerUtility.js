@@ -17,13 +17,6 @@ export default function coupleEventListeners() {
     const btnAddMissionView = document.getElementById('btnAddMissionView');
     const btnEditMissionView = document.getElementById('btnEditMissionView');
 
-    const addMissionView = document.getElementById('add-mission');
-    const editMissionView = document.getElementById('edit-mission');
-
-    function showView(view) {
-        view.classList.remove('d-none');
-    }
-
     btnAddMissionView.addEventListener("click", () => {
         switchToView('add-mission')
     })

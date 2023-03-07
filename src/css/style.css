@@ -6,3 +6,13 @@ nav {
     background: lightgray;
 }
 
+.bi-instagram {
+    color: #833AB4;
+    position: relative;
+    top: 3px
+}
+
+.bi-youtube {
+    position: relative;
+    top: 2px;
+}

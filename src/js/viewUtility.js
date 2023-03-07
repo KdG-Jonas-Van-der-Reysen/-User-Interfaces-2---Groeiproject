@@ -4,7 +4,7 @@ export function switchToView(viewName) {
 
     // Hide all views in the same group
     views.forEach(view => {
-        if (view.group == viewToEnable.group) {
+        if (view.group === viewToEnable.group) {
             view.hide();
         }
     })
