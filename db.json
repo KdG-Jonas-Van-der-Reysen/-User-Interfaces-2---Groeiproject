@@ -6,7 +6,7 @@
         "launchDate": "1969-07-16",
         "missionStatus": "successful",
         "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2011",
+        "missionImage": "https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=",
         "description": "The first manned mission to land on the Moon."
       },
       {
@@ -110,11 +110,11 @@
       },
       {
         "id": 13,
-        "missionName": "Mars Lander Failure",
+        "missionName": "Mars Explorer",
         "launchDate": "2021-01-01T00:00:00Z",
         "missionStatus": "crashed",
         "fuelRequired": 5000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Mars+Lander+Failure",
+        "missionImage": "https://static.nieuwsblad.be/Assets/Images_Upload/2022/09/29/184f6dfe-84d8-4b54-954e-5ff4a517ed8f.jpg",
         "description": "The Mars Lander mission was planned to explore the red planet and gather data, but it crashed due to a malfunction in the landing system."
       },
       {

@@ -8,6 +8,6 @@ import './css/style.css'
 // Our own modules! :-)
 import coupleEventListeners from "./js/eventListenerUtility.js";
 
-// Put into a seperate function so we can re-register the event handlers if the data would update :-)
+// Put into a seperate function, so we can re-register the event handlers if the data would update :-)
 coupleEventListeners();
 
