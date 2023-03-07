@@ -33,6 +33,11 @@ const config = {
                 test: /\.(woff2?|eot|ttf|otf)$/i,
                 type: "asset"
             },
+            // Bootstrap icons
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: "asset/inline",
+            },
         ]
     },
     devServer: {
