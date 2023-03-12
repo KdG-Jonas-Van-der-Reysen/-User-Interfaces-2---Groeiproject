@@ -9,16 +9,16 @@ export function switchToView(viewName) {
         }
     })
 
-    // Show the view to enable
+    // Show the views to enable
     viewToEnable.show();
 }
 
 function getViews() {
-    let views = [...document.querySelectorAll('.view')];
+    let views = [...document.querySelectorAll('.views')];
 
     views = views.map(view => {
-        const viewName = view.getAttribute('data-view-name');
-        const viewGroup = view.getAttribute('data-view-group');
+        const viewName = view.getAttribute('data-views-name');
+        const viewGroup = view.getAttribute('data-views-group');
         return {
             name: viewName,
             group: viewGroup,

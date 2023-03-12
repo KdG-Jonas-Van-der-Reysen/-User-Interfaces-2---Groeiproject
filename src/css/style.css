@@ -6,13 +6,29 @@ nav {
     background: lightgray;
 }
 
+.detailPageImage {
+    max-width: 25%;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+/* Footer */
+
 .bi-instagram {
     color: #833AB4;
     position: relative;
-    top: 3px
+    top: 5px
 }
 
 .bi-youtube {
     position: relative;
     top: 2px;
 }
+
+.bi-facebook {
+    position: relative;
+    top: 1px;
+}
+

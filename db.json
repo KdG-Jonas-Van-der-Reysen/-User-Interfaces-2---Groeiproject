@@ -1,141 +1,150 @@
 {
   "spaceMissions": [
-      {
-        "id": 1,
-        "missionName": "Apollo 11",
-        "launchDate": "1969-07-16",
-        "missionStatus": "successful",
-        "fuelRequired": 2300,
-        "missionImage": "https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=",
-        "description": "The first manned mission to land on the Moon."
-      },
-      {
-        "id": 2,
-        "missionName": "Apollo 12",
-        "launchDate": "1969-11-14",
-        "missionStatus": "successful",
-        "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2012",
-        "description": "The second manned mission to land on the Moon."
-      },
-      {
-        "id": 3,
-        "missionName": "Apollo 13",
-        "launchDate": "1970-04-11",
-        "missionStatus": "lucky",
-        "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2013",
-        "description": "A manned mission to the Moon that had to abort due to an explosion in one of its oxygen tanks."
-      },
-      {
-        "id": 4,
-        "missionName": "Apollo 14",
-        "launchDate": "1971-01-31",
-        "missionStatus": "successful",
-        "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2014",
-        "description": "The third manned mission to land on the Moon."
-      },
-      {
-        "id": 5,
-        "missionName": "Apollo 15",
-        "launchDate": "1971-07-26",
-        "missionStatus": "successful",
-        "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2015",
-        "description": "The fourth manned mission to land on the Moon."
-      },
-      {
-        "id": 6,
-        "missionName": "Apollo 16",
-        "launchDate": "1972-04-16",
-        "missionStatus": "successful",
-        "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2016",
-        "description": "The fifth manned mission to land on the Moon."
-      },
-      {
-        "id": 7,
-        "missionName": "Apollo 17",
-        "launchDate": "1972-12-07",
-        "missionStatus": "successful",
-        "fuelRequired": 2300,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2017",
-        "description": "The final manned mission to land on the Moon."
-      },
-      {
-        "id": 8,
-        "missionName": "Nebula Explorer",
-        "launchDate": "2025-07-15",
-        "missionStatus": "planned",
-        "fuelRequired": 15000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Nebula+Explorer",
-        "description": "The Nebula Explorer is a mission to study and map the structures and processes of nebulae in the universe."
-      },
-      {
-        "id": 9,
-        "missionName": "Interstellar Journey",
-        "launchDate": "2030-01-01",
-        "missionStatus": "planned",
-        "fuelRequired": 250000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Interstellar+Journey",
-        "description": "The Interstellar Journey is a mission to explore the closest star system to our own, Proxima Centauri."
-      },
-      {
-        "id": 10,
-        "missionName": "Dark Energy Expedition",
-        "launchDate": "2035-05-20",
-        "missionStatus": "planned",
-        "fuelRequired": 200000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Dark+Energy+Expedition",
-        "description": "The Dark Energy Expedition is a mission to study the nature and properties of dark energy, the mysterious force that is causing the acceleration of the expansion of the universe."
-      },
-      {
-        "id": 11,
-        "missionName": "Galactic Surveyor",
-        "launchDate": "2040-12-25",
-        "missionStatus": "planned",
-        "fuelRequired": 350000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Galactic+Surveyor",
-        "description": "The Galactic Surveyor is a mission to map and study the structure and evolution of our Milky Way galaxy."
-      },
-      {
-        "id": 12,
-        "missionName": "Supernova Tracker",
-        "launchDate": "2045-07-04",
-        "missionStatus": "planned",
-        "fuelRequired": 25000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Supernova+Tracker",
-        "description": "The Supernova Tracker is a mission to study supernovae, the explosive deaths of stars, and the role they play in the evolution of galaxies."
-      },
-      {
-        "id": 13,
-        "missionName": "Mars Explorer",
-        "launchDate": "2021-01-01T00:00:00Z",
-        "missionStatus": "crashed",
-        "fuelRequired": 5000,
-        "missionImage": "https://static.nieuwsblad.be/Assets/Images_Upload/2022/09/29/184f6dfe-84d8-4b54-954e-5ff4a517ed8f.jpg",
-        "description": "The Mars Lander mission was planned to explore the red planet and gather data, but it crashed due to a malfunction in the landing system."
-      },
-      {
-        "id": 14,
-        "missionName": "Jupiter Explorer",
-        "launchDate": "2022-07-01T00:00:00Z",
-        "missionStatus": "successful",
-        "fuelRequired": 15000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Jupiter+Explorer",
-        "description": "The Jupiter Explorer mission was a great success, as it was able to gather valuable data about Jupiter and its moons. The spacecraft was able to endure the harsh conditions and complete its mission objectives."
-      },
-      {
-        "id": 15,
-        "missionName": "Close Call",
-        "launchDate": "2022-12-01T00:00:00Z",
-        "missionStatus": "lucky",
-        "fuelRequired": 7000,
-        "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Close+Call",
-        "description": "The Close Call mission had a few close calls, but thankfully the astronauts were able to safely return to Earth. The mission was considered lucky, as the spacecraft experienced some malfunctions but was able to complete its mission and return safely."
-      }
-    ],
+    {
+      "id": 1,
+      "name": "Apollo 11",
+      "launchDate": "1969-07-16",
+      "status": "successful",
+      "fuelRequired": 2300,
+      "missionImage": "https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=",
+      "description": "The first manned mission to land on the Moon."
+    },
+    {
+      "id": 2,
+      "name": "Apollo 12",
+      "launchDate": "1969-11-14",
+      "status": "successful",
+      "fuelRequired": 2300,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2012",
+      "description": "The second manned mission to land on the Moon."
+    },
+    {
+      "id": 3,
+      "name": "Apollo 13",
+      "launchDate": "1970-04-11",
+      "status": "lucky",
+      "fuelRequired": 2300,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2013",
+      "description": "A manned mission to the Moon that had to abort due to an explosion in one of its oxygen tanks."
+    },
+    {
+      "id": 4,
+      "name": "Apollo 14",
+      "launchDate": "1971-01-31",
+      "status": "successful",
+      "fuelRequired": 2300,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2014",
+      "description": "The third manned mission to land on the Moon."
+    },
+    {
+      "id": 5,
+      "name": "Apollo 15",
+      "launchDate": "1971-07-26",
+      "status": "successful",
+      "fuelRequired": 2300,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2015",
+      "description": "The fourth manned mission to land on the Moon."
+    },
+    {
+      "id": 6,
+      "name": "Apollo 16",
+      "launchDate": "1972-04-16",
+      "status": "successful",
+      "fuelRequired": 2300,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2016",
+      "description": "The fifth manned mission to land on the Moon."
+    },
+    {
+      "id": 7,
+      "name": "Apollo 17",
+      "launchDate": "1972-12-07",
+      "status": "successful",
+      "fuelRequired": 2300,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Apollo%2017",
+      "description": "The final manned mission to land on the Moon."
+    },
+    {
+      "id": 8,
+      "name": "Nebula Explorer",
+      "launchDate": "2025-07-15",
+      "status": "planned",
+      "fuelRequired": 15000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Nebula+Explorer",
+      "description": "The Nebula Explorer is a mission to study and map the structures and processes of nebulae in the universe."
+    },
+    {
+      "id": 9,
+      "name": "Interstellar Journey",
+      "launchDate": "2030-01-01",
+      "status": "planned",
+      "fuelRequired": 250000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Interstellar+Journey",
+      "description": "The Interstellar Journey is a mission to explore the closest star system to our own, Proxima Centauri."
+    },
+    {
+      "id": 10,
+      "name": "Dark Energy Expedition",
+      "launchDate": "2035-05-20",
+      "status": "planned",
+      "fuelRequired": 200000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Dark+Energy+Expedition",
+      "description": "The Dark Energy Expedition is a mission to study the nature and properties of dark energy, the mysterious force that is causing the acceleration of the expansion of the universe."
+    },
+    {
+      "id": 11,
+      "name": "Galactic Surveyor",
+      "launchDate": "2040-12-25",
+      "status": "planned",
+      "fuelRequired": 350000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Galactic+Surveyor",
+      "description": "The Galactic Surveyor is a mission to map and study the structure and evolution of our Milky Way galaxy."
+    },
+    {
+      "id": 12,
+      "name": "Supernova Tracker",
+      "launchDate": "2045-07-04",
+      "status": "planned",
+      "fuelRequired": 25000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Supernova+Tracker",
+      "description": "The Supernova Tracker is a mission to study supernovae, the explosive deaths of stars, and the role they play in the evolution of galaxies."
+    },
+    {
+      "id": 13,
+      "name": "Mars Explorer",
+      "launchDate": "2021-01-01T00:00:00Z",
+      "status": "crashed",
+      "fuelRequired": 5000,
+      "missionImage": "https://static.nieuwsblad.be/Assets/Images_Upload/2022/09/29/184f6dfe-84d8-4b54-954e-5ff4a517ed8f.jpg",
+      "description": "The Mars Lander mission was planned to explore the red planet and gather data, but it crashed due to a malfunction in the landing system."
+    },
+    {
+      "id": 14,
+      "name": "Jupiter Explorer",
+      "launchDate": "2022-07-01T00:00:00Z",
+      "status": "successful",
+      "fuelRequired": 15000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Jupiter+Explorer",
+      "description": "The Jupiter Explorer mission was a great success, as it was able to gather valuable data about Jupiter and its moons. The spacecraft was able to endure the harsh conditions and complete its mission objectives."
+    },
+    {
+      "id": 15,
+      "name": "Close Call",
+      "launchDate": "2022-12-01T00:00:00Z",
+      "status": "lucky",
+      "fuelRequired": 7000,
+      "missionImage": "https://via.placeholder.com/200x80.png/97E423/000?text=Close+Call",
+      "description": "The Close Call mission had a few close calls, but thankfully the astronauts were able to safely return to Earth. The mission was considered lucky, as the spacecraft experienced some malfunctions but was able to complete its mission and return safely."
+    },
+    {
+      "name": "Dogseek one",
+      "launchDate": "2018-08-02",
+      "status": "lucky",
+      "fuelRequired": "7522.5",
+      "description": "Deze missie is bedoeld om in 2030 een planeet te zoeken waar het mogelijk zou zijn om alle soorten hondenrassen vredig te laten samenleven met alle mogelijke omstandigheden waarin zij zich blij kunnen voelen en op een gezonde manier op pension kunnen gaan. Deze missie beoogt alle honden die in het leven de mens geholpen hebben als geleidehond, politiehond, of andere soort hond. Deze honden moeten wel een diploma kunnen voorleggen van hoger onderwijs.",
+      "missionImage": "https://static.vecteezy.com/ti/gratis-vector/p3/2872730-schattige-hond-vliegen-op-raket-dier-cartoon-concept-geisoleerd-kan-gebruikt-voor-t-shirt-wenskaart-uitnodigingskaart-of-mascotte-platte-cartoon-stijl-gratis-vector.jpg",
+      "id": 16
+    }
+  ],
   "astronauts": [
     {
       "id": 1,
