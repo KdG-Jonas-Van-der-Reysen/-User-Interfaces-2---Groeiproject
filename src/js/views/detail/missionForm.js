@@ -23,6 +23,7 @@ export default async function loadMission(id) {
         const missionImage = document.getElementById("missionImage")
         missionImage.src = mission.missionImage;
         missionImage.classList.remove("d-none");
+        return;
 
     } catch (error) {
         // Show the error message
@@ -34,6 +35,7 @@ export default async function loadMission(id) {
 
         // Log the error to the console
         console.error(error);
+        return;
     }
 
 }

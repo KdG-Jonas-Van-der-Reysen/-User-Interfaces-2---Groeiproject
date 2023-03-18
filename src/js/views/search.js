@@ -66,7 +66,7 @@ async function addMission(mission) {
             <td>${mission.id}</td>
             <td>${mission.name}</td>
             <td class="text-truncate">${(mission.description.length > 50) ? mission.description.substring(0,50) + '...' : mission.description }</td>
-            <td><span class="badge w-100" style="background: ${missionLabels[mission.status].color};">${missionLabels[mission.status].text}</span></td>
+            <td><span class="badge w-100 ${mission.status}">${missionLabels[mission.status].text}</span></td>
             <td>${new Date(mission.launchDate).toLocaleDateString('nl-be',dateFormattingOptions)}</td>
             <td>${mission.fuelRequired}</td>
         </tr>`;

@@ -32,3 +32,19 @@ table {
     top: 1px;
 }
 
+/* Mission status colors */
+.lucky {
+    background-color: #e9a049;
+}
+
+.planned {
+    background-color: #49afe9;
+}
+
+.successful {
+    background-color: #67d572;
+}
+
+.crashed {
+    background-color: #e65249;
+}

@@ -1,3 +1,6 @@
+import loadMission from "./missionForm.js";
+import {switchToView} from "../../utilities/views.js";
+
 export default async function loadDetailsPage() {
     // Register clickthrough on the add mission button
     const addMissionButton = document.getElementById('btnAddMissionView');
@@ -8,6 +11,16 @@ export default async function loadDetailsPage() {
 
         document.getElementById("submitMission").innerHTML = "Missie toevoegen";
         document.querySelector("#loadDetailsPage>h1").textContent = "Missie toevoegen";
+    });
+
+    // Register clickthrough on the edit mission button
+    const editMissionButton = document.getElementById("editMissionButton");
+    editMissionButton.addEventListener('click', async () => {
+        // Load in the mission details
+        const missionId = document.getElementById("detailsId").value;
+        await loadMission(missionId);
+
+        switchToView("missionForm");
     });
 
     // Register the click on the submit button

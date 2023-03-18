@@ -57,7 +57,7 @@
 
     <div class="tab-content nav-tabs border-0" id="myTabContent">
         <!-- Home tab -->
-        <section class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <section class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="py-4">
                 <div class="row gy-4 gy-md-0">
                     <div class="col-md-5 d-none d-md-block">
@@ -79,7 +79,7 @@
             <a class="btn btn-success mb-3 fw-semibold" role="button" href="#">Missie toevoegen</a>
             <div class="row gy-4">
                 <div class="col-md-2">
-                    <a class="text-dark text-decoration-none switch-tab" data-tab-name="loadDetailsPage" data-id="1"
+                    <a class="text-dark text-decoration-none switch-tab" data-tab-name="detail" data-id="1"
                        href="#">
                         <div class="card shadow border-0">
                             <img class="card-img-top w-100 d-block"
@@ -108,94 +108,190 @@
         </section>
 
         <!-- Detail tab -->
-        <section class="tab-pane" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+        <section class="tab-pane active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
             <div class="mb-3 mt-4">
                 <button type="button" id="btnAddMissionView" class="btn btn-primary">Nieuwe missie toevoegen</button>
             </div>
 
-            <h1>Missie bewerken</h1>
-            <p class="lead">Toch iets niet volgens plan verlopen? Of gewoon te vergeten vermelden dat je hoogtevrees
-                hebt? Geen zorgen, geef het hier door, dan heeft de spionageballon uit China weer wat minder werk te
-                doen!</p>
-            <form id="missionDetails" class="border border-5 p-2 rounded-3 mb-5 mt-3">
-                <input type="hidden" name="missionId" id="missionId">
-                <div class="alert d-none rounded-1" id="statusNotification" role="alert">
-                    Er is iets misgelopen bij het ophalen van de missie, probeer het later opnieuw.
-                </div>
-                <img class="rounded img-fluid mb-3 fit-cover d-none rounded-1 detailPageImage" id="missionImage"
-                     src="../img/spaceBanner.png"
-                     alt="Foto van raket die opgestegen is vanop de Aarde">
-                <div class="row">
-                    <div class="col-12">
-                        <label class="form-label fw-semibold" for="missionName">Naam van de missie</label>
-                        <div class="input-group">
+            <div id="missionEditView" class="views d-none" data-views-name="missionForm" data-views-group="detailsPage">
+                <h1 id="formTitle">Missie bewerken</h1>
+                <p class="lead" id="formDescription">Toch iets niet volgens plan verlopen? Of gewoon te vergeten vermelden dat je hoogtevrees
+                    hebt? Geen zorgen, geef het hier door, dan heeft de spionageballon uit China weer wat minder werk te
+                    doen!
+                </p>
+                <form id="missionDetails" class="border border-5 p-2 rounded-3 mb-5 mt-3">
+                    <input type="hidden" name="missionId" id="missionId">
+                    <div class="alert d-none rounded-1" id="statusNotification" role="alert">
+                        Er is iets misgelopen bij het ophalen van de missie, probeer het later opnieuw.
+                    </div>
+                    <img class="rounded img-fluid mb-3 fit-cover d-none rounded-1 detailPageImage" id="missionImage"
+                         src="../img/spaceBanner.png"
+                         alt="Foto van raket die opgestegen is vanop de Aarde">
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="form-label fw-semibold" for="missionName">Naam van de missie</label>
+                            <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="bi bi-tag"></i>
                                 </span>
-                            <input required class="form-control" type="text" placeholder="Geef de missie een naam..."
-                                   id="missionName">
+                                <input required class="form-control" type="text"
+                                       placeholder="Geef de missie een naam..."
+                                       id="missionName">
+                            </div>
+                            <p class="text-danger d-none" id="missionNameError">Gelieve de missienaam in te vullen</p>
                         </div>
-                        <p class="text-danger d-none" id="missionNameError">Gelieve de missienaam in te vullen</p>
                     </div>
-                </div>
-                <div class="row mt-3 mb-3">
-                    <div class="col-12">
-                        <label class="form-label fw-semibold" for="missionDescription">Beschrijf de missie</label>
-                        <textarea required
-                                  class="form-control" id="missionDescription"
-                                  placeholder="Vertel ons wat meer over wat de missie precies inhoudt...">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-12">
+                            <label class="form-label fw-semibold" for="missionDescription">Beschrijf de missie</label>
+                            <textarea required
+                                      class="form-control" id="missionDescription"
+                                      placeholder="Vertel ons wat meer over wat de missie precies inhoudt...">
                             </textarea>
-                        <p class="text-danger d-none" id="missionDescriptionError">Gelieve de missienaam in te
-                            vullen</p>
+                            <p class="text-danger d-none" id="missionDescriptionError">Gelieve de missienaam in te
+                                vullen</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <label class="form-label fw-semibold" for="missionLaunchDate">Lanceerdatum</label>
-                        <input required class="form-control" id="missionLaunchDate" type="date">
-                        <p class="text-danger d-none" id="missionLaunchDateError">Gelieve de missienaam in te vullen</p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold" for="missionLaunchDate">Lanceerdatum</label>
+                            <input required class="form-control" id="missionLaunchDate" type="date">
+                            <p class="text-danger d-none" id="missionLaunchDateError">Gelieve de missienaam in te
+                                vullen</p>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold" for="status">Status</label>
+                            <select required class="form-select" id="status">
+                                <option value="planned" selected="">Gepland</option>
+                                <option value="lucky">Geluksvogels</option>
+                                <option value="successful">Succesvol voltooid</option>
+                                <option value="">Gecrasht</option>
+                            </select>
+                            <p class="text-danger d-none" id="statusError">Gelieve de missienaam in te vullen</p>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label class="form-label fw-semibold" for="status">Status</label>
-                        <select required class="form-select" id="status">
-                            <option value="planned" selected="">Gepland</option>
-                            <option value="lucky">Geluksvogels</option>
-                            <option value="successful">Succesvol voltooid</option>
-                            <option value="">Gecrasht</option>
-                        </select>
-                        <p class="text-danger d-none" id="statusError">Gelieve de missienaam in te vullen</p>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6">
-                        <label class="form-label fw-semibold mb-0" for="missionImageUrl">Afbeeldingslink</label>
-                        <p class="fw-light">Aub enkel afbeeldingen van het formaat 400x200</p>
-                        <div class="input-group">
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold mb-0" for="missionImageUrl">Afbeeldingslink</label>
+                            <p class="fw-light">Aub enkel afbeeldingen van het formaat 400x200</p>
+                            <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="bi bi-tag"></i>
                                 </span>
-                            <input required class="form-control" id="missionImageUrl" type="text"
-                                   placeholder="Link naar de afbeelding...">
-                        </div>
-                        <p class="text-danger d-none" id="missionImageError">Gelieve de missienaam in te vullen</p>
+                                <input required class="form-control" id="missionImageUrl" type="text"
+                                       placeholder="Link naar de afbeelding...">
+                            </div>
+                            <p class="text-danger d-none" id="missionImageError">Gelieve de missienaam in te vullen</p>
 
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold mb-0" for="missionFuel">Liter brandstof nodig</label>
+                            <p class="fw-light">Liever te veel schatten dan te weinig..</p>
+                            <input required class="form-control" type="number" id="missionFuel" min="10"
+                                   max="1000000000"
+                                   placeholder="Vul het aantal liter in...">
+                            <p class="text-danger d-none" id="missionFuelError">Gelieve de missienaam in te vullen</p>
+                        </div>
                     </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button class="btn btn-primary fw-semibold rounded-1" type="submit" id="submitMission">
+                                Missie
+                                bewerken
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div id="missionDetailsView" class="views" data-views-name="missionDetails" data-views-group="detailsPage">
+                <input type="hidden" name="missionId" id="detailsId" value="12">
+                <div class="row gy-4 gy-md-0">
                     <div class="col-md-6">
-                        <label class="form-label fw-semibold mb-0" for="missionFuel">Liter brandstof nodig</label>
-                        <p class="fw-light">Liever te veel schatten dan te weinig..</p>
-                        <input required class="form-control" type="number" id="missionFuel" min="10" max="1000000000"
-                               placeholder="Vul het aantal liter in...">
-                        <p class="text-danger d-none" id="missionFuelError">Gelieve de missienaam in te vullen</p>
+                        <div class="p-xl-2 m-xl-2">
+                            <img class="rounded img-fluid w-100 fit-cover" id="detailsImage" style="min-height: 300px;"
+                                 src="../img/spaceBanner.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-md-flex align-items-md-center">
+                        <div style="max-width: 350px;">
+                            <h2 class="text-uppercase fw-bold" id="detailsName">Apollo 11</h2>
+                            <p class="mb-3" id="detailsDescription">The first manned mission to land on the Moon.</p>
+
+                            <!-- Status -->
+                            <div class="d-flex">
+                                <i class="bi bi-tag fs-5"></i>
+                                <span class="ms-3" id="detailsStatus">
+                                    <span class="badge lucky">
+                                        Geluksvogels
+                                    </span>
+                                </span>
+                            </div>
+                            <!-- Lanceerdatum -->
+                            <div class="my-2 d-flex">
+                                <i class="bi bi-calendar-minus-fill"></i>
+                                <span class="d-block ms-3" id="detailsLaunchDate">
+                                    Vrijdag 10 januari 2022
+                                </span>
+                            </div>
+                            <!-- Brandstof -->
+                            <div class="d-flex">
+                                <i class="bi bi-droplet-fill"></i>
+                                <span class="d-block ms-3" id="detailsFuel">
+                                    12.000 liter
+                                </span>
+                            </div>
+
+                            <!-- Action buttons -->
+                            <div class="mt-3">
+                                <button class="btn btn-danger btn-sm mr-1" type="button">Verwijderen</button>
+                                <button class="btn btn-primary btn-sm ms-3" type="button" id="editMissionButton">Bewerken</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col">
-                        <button class="btn btn-primary fw-semibold rounded-1" type="submit" id="submitMission">Missie
-                            bewerken
-                        </button>
+                <div class="container mt-3">
+                    <h1 style="line-height: 100%;">Astronauten<a
+                            class="btn btn-success mb-3 fw-semibold float-end m-auto" role="button"
+                            href="addMission.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                             viewBox="0 0 16 16" class="bi bi-plus">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                        </svg>&nbsp;Astronaut toevoegen</a></h1>
+                    <div class="border border-5 p-2 rounded-3 mb-5 mt-3">
+                        <div class="table-responsive">
+                            <table class="table" style="margin-bottom: 0;">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Naam</th>
+                                    <th>Geboortedatum</th>
+                                    <th>Nationaliteit</th>
+                                    <th>EHBO Licentie</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Karen Brown</td>
+                                    <td class="text-truncate">2 januari 2000</td>
+                                    <td>Brits</td>
+                                    <td><span class="badge bg-success">Ja</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mohammed Ali</td>
+                                    <td>1 januari 1997</td>
+                                    <td>Belg</td>
+                                    <td><span class="badge bg-danger">Nee</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </section>
 
         <!-- Search tab -->
@@ -225,7 +321,7 @@
                             <td>1</td>
                             <td>Apollo 11</td>
                             <td class="text-truncate">The first manned mission to land on the Moon.</td>
-                            <td><span class="badge w-100" style="background: #67d572;">Succesvol</span></td>
+                            <td><span class="badge w-100 lucky">Succesvol</span></td>
                             <td>2 januari 2023</td>
                             <td>1200</td>
                         </tr>
