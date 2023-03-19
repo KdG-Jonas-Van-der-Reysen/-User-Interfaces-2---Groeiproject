@@ -1,0 +1,88 @@
+<div id="missionDetailsView" class="views" data-views-name="missionDetails" data-views-group="detailsPage">
+    <div class="row gy-4 gy-md-0">
+        <div class="col-md-6">
+            <div class="p-xl-2 m-xl-2">
+                <img class="rounded img-fluid w-100 fit-cover d-none" id="detailsImage" style="min-height: 300px;"
+                     src="../img/spaceBanner.png">
+            </div>
+        </div>
+        <div class="col-md-6 d-md-flex align-items-md-center">
+            <div style="max-width: 350px;">
+                <h2 class="text-uppercase fw-bold" id="detailsName"></h2>
+                <p class="mb-3" id="detailsDescription"></p>
+
+                <!-- Id -->
+                <div class="d-flex mb-2">
+                    <i class="bi bi-person-vcard"></i>
+                    <span class="ms-3" id="detailsId">
+                                </span>
+                </div>
+
+                <!-- Status -->
+                <div class="d-flex">
+                    <i class="bi bi-tag fs-5"></i>
+                    <span class="ms-3" id="detailsStatus">
+                                </span>
+                </div>
+                <!-- Lanceerdatum -->
+                <div class="my-2 d-flex">
+                    <i class="bi bi-calendar-minus-fill"></i>
+                    <span class="d-block ms-3" id="detailsLaunchDate">
+                                </span>
+                </div>
+                <!-- Brandstof -->
+                <div class="d-flex">
+                    <i class="bi bi-droplet-fill"></i>
+                    <span class="d-block ms-3" id="detailsFuel">
+                                </span>
+                </div>
+
+                <!-- Action buttons -->
+                <div class="mt-3">
+                    <button class="btn btn-danger btn-sm mr-1" type="button" id="deleteMissionButton">Verwijderen</button>
+                    <button class="btn btn-primary btn-sm ms-3" type="button" id="editMissionButton">Bewerken</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <h1 style="line-height: 100%;">Astronauten<a
+                    class="btn btn-success mb-3 fw-semibold float-end m-auto" role="button"
+                    href="addMission.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                     viewBox="0 0 16 16" class="bi bi-plus">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                </svg>&nbsp;Astronaut toevoegen</a></h1>
+        <div class="border border-5 p-2 rounded-3 mb-5 mt-3">
+            <div class="table-responsive">
+                <table class="table" style="margin-bottom: 0;">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Naam</th>
+                        <th>Geboortedatum</th>
+                        <th>Nationaliteit</th>
+                        <th>EHBO Licentie</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td>Karen Brown</td>
+                        <td class="text-truncate">2 januari 2000</td>
+                        <td>Brits</td>
+                        <td><span class="badge bg-success">Ja</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mohammed Ali</td>
+                        <td>1 januari 1997</td>
+                        <td>Belg</td>
+                        <td><span class="badge bg-danger">Nee</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

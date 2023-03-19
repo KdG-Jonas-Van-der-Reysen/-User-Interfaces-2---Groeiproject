@@ -1,19 +1,19 @@
+import apiClient from "../utilities/apiClient.js";
+import {formatDate} from "../utilities/commonUI.js";
+import {registerMissionDetailClickthrough} from "../utilities/eventListeners.js";
+
 const missionList = document.getElementById("missionList");
 const missionLabels = {
     "lucky": {
-        "color": "#e9a049",
         "text": "Geluksvogels"
     },
     "planned": {
-        "color": "#49afe9",
         "text": "Gepland"
     },
     "successful": {
-        "color": "#67d572",
         "text": "Succesvol"
     },
     "crashed": {
-        "color": "#e65249",
         "text": "Gecrasht"
     }
 };
@@ -29,7 +29,7 @@ export default async function loadSearchPage() {
 
 async function updateMissions(filter = false, query = "") {
     // Get the missions
-    const missions = await getMissions();
+    const missions = await apiClient.missions.list();
 
     // Filter the missions
     let missionsToUse = (filter && query !== "") ? await filterMissions(missions, query) : missions;
@@ -39,11 +39,9 @@ async function updateMissions(filter = false, query = "") {
 
     // Add the filtered missions to the list
     missionsToUse.forEach(mission => addMission(mission));
-}
 
-async function getMissions() {
-    const response = await fetch('http://localhost:3000/spacemissions');
-    return await response.json();
+    // Register clickthrough on the mission cards
+    registerMissionDetailClickthrough();
 }
 
 async function filterMissions(missions, query) {
@@ -64,10 +62,10 @@ async function addMission(mission) {
     missionList.innerHTML += `
         <tr>
             <td>${mission.id}</td>
-            <td>${mission.name}</td>
+            <td><a href="#" class="mission-clickthrough" data-mission-id="${mission.id}">${mission.name}</a></td>
             <td class="text-truncate">${(mission.description.length > 50) ? mission.description.substring(0,50) + '...' : mission.description }</td>
             <td><span class="badge w-100 ${mission.status}">${missionLabels[mission.status].text}</span></td>
-            <td>${new Date(mission.launchDate).toLocaleDateString('nl-be',dateFormattingOptions)}</td>
+            <td>${formatDate(mission.launchDate)}</td>
             <td>${mission.fuelRequired}</td>
         </tr>`;
 }

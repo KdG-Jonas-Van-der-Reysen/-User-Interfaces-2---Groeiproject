@@ -1,0 +1,90 @@
+<div id="missionFormView" class="views d-none" data-views-name="missionForm" data-views-group="detailsPage">
+    <h1 id="formTitle">Missie bewerken</h1>
+    <p class="lead" id="formDescription">Toch iets niet volgens plan verlopen? Of gewoon te vergeten vermelden dat je hoogtevrees
+        hebt? Geen zorgen, geef het hier door, dan heeft de spionageballon uit China weer wat minder werk te
+        doen!
+    </p>
+    <form id="missionDetails" class="border border-5 p-2 rounded-3 mb-5 mt-3">
+        <input type="hidden" name="missionId" id="missionId">
+        <div class="alert d-none rounded-1" id="statusNotification" role="alert">
+            Er is iets misgelopen bij het ophalen van de missie, probeer het later opnieuw.
+        </div>
+        <img class="rounded img-fluid mb-3 fit-cover d-none rounded-1 detailPageImage" id="missionImage"
+             src="../img/spaceBanner.png"
+             alt="Foto van raket die opgestegen is vanop de Aarde">
+        <div class="row">
+            <div class="col-12">
+                <label class="form-label fw-semibold" for="missionName">Naam van de missie</label>
+                <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-tag"></i>
+                                </span>
+                    <input required class="form-control" type="text"
+                           placeholder="Geef de missie een naam..."
+                           id="missionName">
+                </div>
+                <p class="text-danger d-none" id="missionNameError">Gelieve de missienaam in te vullen</p>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col-12">
+                <label class="form-label fw-semibold" for="missionDescription">Beschrijf de missie</label>
+                <textarea required
+                          class="form-control" id="missionDescription"
+                          placeholder="Vertel ons wat meer over wat de missie precies inhoudt...">
+                            </textarea>
+                <p class="text-danger d-none" id="missionDescriptionError">Gelieve de missienaam in te
+                    vullen</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <label class="form-label fw-semibold" for="missionLaunchDate">Lanceerdatum</label>
+                <input required class="form-control" id="missionLaunchDate" type="date">
+                <p class="text-danger d-none" id="missionLaunchDateError">Gelieve de missienaam in te
+                    vullen</p>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label fw-semibold" for="missionStatus">Status</label>
+                <select required class="form-select" id="missionStatus">
+                    <option value="planned" selected="">Gepland</option>
+                    <option value="lucky">Geluksvogels</option>
+                    <option value="successful">Succesvol voltooid</option>
+                    <option value="">Gecrasht</option>
+                </select>
+                <p class="text-danger d-none" id="missionStatusError">Gelieve de missienaam in te vullen</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <label class="form-label fw-semibold mb-0" for="missionImageUrl">Afbeeldingslink</label>
+                <p class="fw-light">Aub enkel afbeeldingen van het formaat 400x200</p>
+                <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-tag"></i>
+                                </span>
+                    <input required class="form-control" id="missionImageUrl" type="text"
+                           placeholder="Link naar de afbeelding...">
+                </div>
+                <p class="text-danger d-none" id="missionImageUrlError">Gelieve de missienaam in te vullen</p>
+
+            </div>
+            <div class="col-md-6">
+                <label class="form-label fw-semibold mb-0" for="missionFuel">Liter brandstof nodig</label>
+                <p class="fw-light">Liever te veel schatten dan te weinig..</p>
+                <input required class="form-control" type="number" id="missionFuel" min="10"
+                       max="1000000000"
+                       placeholder="Vul het aantal liter in...">
+                <p class="text-danger d-none" id="missionFuelError">Gelieve de missienaam in te vullen</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <button class="btn btn-primary fw-semibold rounded-1" type="submit" id="submitMission">
+                    Missie
+                    bewerken
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

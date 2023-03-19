@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo: Bootstrap / npm / webpack</title>
+</head>
+<body>
+<nav class="navbar navbar-light navbar-expand-md" id="navbar" role="tablist">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <strong id="websiteName">Space Mission System</strong>
+        </a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-2">
+            <ul class="navbar-nav" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active bg-transparent border-0" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                        Home
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link bg-transparent border-0" id="detail-tab" data-bs-toggle="tab"
+                            data-bs-target="#detail" type="button" role="tab" aria-controls="detail"
+                            aria-selected="false">Detail
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link bg-transparent border-0" id="search-tab" data-bs-toggle="tab"
+                            data-bs-target="#search" type="button" role="tab" aria-controls="search"
+                            aria-selected="false">Search
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link bg-transparent border-0" id="settings-tab" data-bs-toggle="tab"
+                            data-bs-target="#settings" type="button" role="tab" aria-controls="settings"
+                            aria-selected="false">Settings
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link bg-transparent border-0" id="about-tab" data-bs-toggle="tab"
+                            data-bs-target="#about" type="button" role="tab" aria-controls="contact"
+                            aria-selected="false">About
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-3">
+
+    <div class="tab-content nav-tabs border-0" id="myTabContent">
+        <!-- Home tab -->
+        <%- include('./views/home.ejs') %>
+
+        <!-- Detail tab -->
+        <%- include('./views/detail/detail.ejs') %>
+
+        <!-- Search tab -->
+        <%- include('./views/search.ejs') %>
+
+        <!-- Settings tab -->
+        <%- include('./views/settings.ejs') %>
+    </div>
+</div>
+<footer class="bg-secondary mt-5" style="background: lightgray !important;">
+    <div class="container">
+        <ul class="nav justify-content-center pt-3 border-bottom pb-2" style="border-color: #bdbaba !important;">
+            <li class="nav-item">
+                <a class="nav-link px-2 fs-3 text-primary" href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 fs-2 text-danger" href="#">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 fs-2" href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav justify-content-center pt-2 pb-1" style="/*color: white;*/">
+            <li class="nav-item">
+                <a class="link-dark nav-link px-2" href="mailto:contact@klantendienst.be">contact@ruimtemissies.be</a>
+            </li>
+        </ul>
+        <ul class="nav justify-content-center pb-3" style="/*color: white;*/">
+            <li class="text-center">Bredabaan 144 <br>2930 Brasschaat <br>België</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

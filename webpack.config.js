@@ -7,7 +7,8 @@ const config = {
     mode: "development",
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve("src/html/index.html"),
+            filename: "index.html",
+            template: "./src/html/index.ejs"
         }),
         new MiniCssExtractPlugin()
     ],
@@ -18,10 +19,10 @@ const config = {
                 // use: ["style-loader", "css-loader"]}, // faster build in development
                 use: [MiniCssExtractPlugin.loader, "css-loader"]
             },
-            //  assets referred from html
+            //  assets referred from ejs
             {
-                test: /\.html?$/i,
-                use: ['html-loader']
+                test: /\.ejs?$/i,
+                use: ['html-loader', 'template-ejs-loader']
             },
             // Image assets
             {

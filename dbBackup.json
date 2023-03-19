@@ -145,13 +145,22 @@
       "id": 16
     },
     {
-      "name": "Stargate threethous",
-      "launchDate": "2023-03-24",
-      "status": "successful",
-      "fuelRequired": 2000,
+      "name": "Stargate threethousand",
+      "launchDate": "2023-03-01",
+      "status": "planned",
+      "fuelRequired": 302,
       "missionImage": "https://cdn.mos.cms.futurecdn.net/Gy5YY89HNsbmqL53asZhg5.jpg",
-      "description": "We moeten Urbanus zijn marskonijn terugvinden!",
+      "description": "We're on a mission with ons marskonijn from urbanus",
       "id": 17
+    },
+    {
+      "name": "Tibo's space gedoe",
+      "launchDate": "2022-03-19",
+      "status": "lucky",
+      "fuelRequired": 1000,
+      "missionImage": "https://media.istockphoto.com/id/1131418344/photo/space-shuttle-in-the-rays-of-sun.jpg?b=1&s=170667a&w=0&k=20&c=ogSQhsWAk4URSR5cr7r8Y6SR7gyQ2rrXd9zKE5YQngs=",
+      "description": "Tibo vliegt graag met een raket",
+      "id": 18
     }
   ],
   "astronauts": [
