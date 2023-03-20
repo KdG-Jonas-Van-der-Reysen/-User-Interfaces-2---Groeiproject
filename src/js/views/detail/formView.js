@@ -3,13 +3,14 @@ import apiClient from "../../utilities/apiClient.js";
 import { toast } from "../../utilities/toast.js";
 import { fillMissionField, getMissionInputValue } from "../../utilities/commonUI.js";
 import {showMissionDetails} from "./detailsView.js";
+import switchToTab from "../../utilities/tabs.js";
 
 export default function loadForm() {
     // Listen to the image url input field
     const missionImageUrlInput = document.getElementById("missionImageUrl");
     const image = document.getElementById("missionImage");
 
-    missionImageUrlInput.addEventListener("change", (e) => {
+    missionImageUrlInput.addEventListener("change", () => {
         image.src = missionImageUrlInput.value;
         image.classList.remove("d-none");
     });
@@ -51,7 +52,7 @@ export async function loadMissionIntoForm(id) {
         const missionImage = document.getElementById("missionImage")
         missionImage.src = mission.missionImage;
         missionImage.classList.remove("d-none");
-        return;
+
 
     } catch (error) {
         // Show the error message
@@ -63,7 +64,7 @@ export async function loadMissionIntoForm(id) {
 
         // Log the error to the console
         console.error(error);
-        return;
+
     }
 
 }
@@ -96,13 +97,16 @@ export function newState() {
     clearForm();
     document.getElementById("submitMission").innerHTML = "Missie toevoegen";
     document.getElementById("formTitle").textContent = "Missie toevoegen";
+    document.getElementById("btnAddMissionView").classList.add("d-none");
 
     switchToView("missionForm");
+    switchToTab("detail")
 }
 
 export async function editState(missionId) {
     await loadMissionIntoForm(missionId);
 
+    document.getElementById("btnAddMissionView").classList.remove("d-none");
     document.getElementById("submitMission").innerHTML = "Wijzigingen opslaan";
     document.getElementById("formTitle").textContent = "Missie bewerken";
 }

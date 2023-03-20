@@ -15,10 +15,27 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                // use: ["style-loader", "css-loader"]}, // faster build in development
-                use: [MiniCssExtractPlugin.loader, "css-loader"]
+                test: /\.s?css$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'scss-loader',
+                    /* Je kan postCSS gebruiken om met autoprefixer vendor prefixes toe te voegen aan je gegeneerde scss
+                    * https://github.com/postcss/autoprefixer
+                    */
+                    // {
+                    //     loader: 'postcss-loader',
+                    //     options: {
+                    //         postcssOptions: {
+                    //             plugins: () => [
+                    //                 require('autoprefixer')
+                    //             ]
+                    //         }
+                    //     }
+                    // },
+                    'sass-loader'
+                ]
             },
+
             //  assets referred from ejs
             {
                 test: /\.ejs?$/i,

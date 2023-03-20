@@ -3,7 +3,7 @@
         <div class="col-md-6">
             <div class="p-xl-2 m-xl-2">
                 <img class="rounded img-fluid w-100 fit-cover d-none" id="detailsImage" style="min-height: 300px;"
-                     src="../img/spaceBanner.png">
+                     src="../img/spaceBanner.png" alt="Mission image">
             </div>
         </div>
         <div class="col-md-6 d-md-flex align-items-md-center">
@@ -39,20 +39,21 @@
 
                 <!-- Action buttons -->
                 <div class="mt-3">
-                    <button class="btn btn-danger btn-sm mr-1" type="button" id="deleteMissionButton">Verwijderen</button>
+                    <button class="btn btn-danger btn-sm mr-1" type="button" id="deleteMissionButton">Verwijderen
+                    </button>
                     <button class="btn btn-primary btn-sm ms-3" type="button" id="editMissionButton">Bewerken</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="container mt-3">
-        <h1 style="line-height: 100%;">Astronauten<a
-                    class="btn btn-success mb-3 fw-semibold float-end m-auto" role="button"
-                    href="addMission.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                     viewBox="0 0 16 16" class="bi bi-plus">
-                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
-                </svg>&nbsp;Astronaut toevoegen</a></h1>
+        <h1 style="line-height: 100%;">
+            Astronauten
+            <button class="btn btn-success mb-3 fw-semibold float-end m-auto" role="button" id="btnAddAstronaut">
+                <i class="bi bi-plus-lg"></i>
+                &nbsp;Astronaut toevoegen
+            </button>
+        </h1>
         <div class="border border-5 p-2 rounded-3 mb-5 mt-3">
             <div class="table-responsive">
                 <table class="table" style="margin-bottom: 0;">
@@ -65,7 +66,7 @@
                         <th>EHBO Licentie</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="astronautsList">
                     <tr>
                         <td>10</td>
                         <td>Karen Brown</td>

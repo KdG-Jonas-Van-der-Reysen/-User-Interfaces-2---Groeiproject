@@ -3,6 +3,7 @@ import {updateWebsiteParams} from "../partials/navbar.js";
 export default function loadSettingsPage() {
     document.getElementById("settingsForm").addEventListener("submit", saveSettings);
 
+    // Initialize the form
     document.getElementById("settingsWebsiteName").value = localStorage.getItem("websiteName") || "Space Mission System";
     document.getElementById("settingsNavbarColor").value = localStorage.getItem("navbarColor") || "nikskeniet";
 }

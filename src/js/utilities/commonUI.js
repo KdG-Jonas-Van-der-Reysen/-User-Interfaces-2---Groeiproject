@@ -1,3 +1,18 @@
+export const missionLabels = {
+    "lucky": {
+        "text": "Geluksvogels"
+    },
+    "planned": {
+        "text": "Gepland"
+    },
+    "successful": {
+        "text": "Succesvol"
+    },
+    "crashed": {
+        "text": "Gecrasht"
+    }
+};
+
 export function fillMissionField(fieldId, value) {
     fillField("mission" + fieldId, value);
 }

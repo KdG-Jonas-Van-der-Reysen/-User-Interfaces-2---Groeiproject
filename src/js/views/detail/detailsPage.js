@@ -1,10 +1,10 @@
-import {editState, loadMissionIntoForm, newState} from "./formView.js";
+import {editState, newState} from "./formView.js";
 import {switchToView} from "../../utilities/views.js";
 import loadForm from "./formView.js";
 import apiClient from "../../utilities/apiClient.js";
 import Swal from "sweetalert2";
 import {toast} from "../../utilities/toast.js";
-import {showMissionDetails} from "./detailsView.js";
+import {addAstronaut} from "./detailsView.js";
 import switchToTab from "../../utilities/tabs.js";
 
 export default async function loadDetailsPage() {
@@ -14,7 +14,9 @@ export default async function loadDetailsPage() {
 
     // Register clickthrough on the add mission button
     const addMissionButton = document.getElementById('btnAddMissionView');
+    const addMissionButton2 = document.getElementById('btnAddMissionView2');
     addMissionButton.addEventListener('click', newState);
+    addMissionButton2.addEventListener('click', newState);
 
     // -- DETAILS VIEW -- //
 
@@ -62,4 +64,7 @@ export default async function loadDetailsPage() {
             })
         }
     })
+
+    const addAstronautButton = document.getElementById("btnAddAstronaut");
+    addAstronautButton.addEventListener('click', addAstronaut);
 }

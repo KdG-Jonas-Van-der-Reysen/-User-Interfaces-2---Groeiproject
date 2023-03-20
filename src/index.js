@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css' // importeer bootstrap CSS code
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 // Our own styling
-import './css/style.css'
+import './scss/style.scss'
+import './scss/custom.scss'
 
 // Import page utility functions
 import initializeTabSystem from "./js/utilities/eventListeners.js";

@@ -1,0 +1,4 @@
+@mixin styleIcon($pixelsFromTop) {
+  position: relative;
+  top: $pixelsFromTop;
+}

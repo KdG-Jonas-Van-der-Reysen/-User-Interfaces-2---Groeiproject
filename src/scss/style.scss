@@ -1,0 +1,77 @@
+@use "mixins" as mx;
+@use "variables" as *;
+
+
+body {
+  nav {
+    background: lightgray;
+  }
+
+  .detailPageImage {
+    max-width: 25%;
+  }
+
+  table {
+    margin-bottom: 0 !important;
+  }
+  .bi-instagram {
+    color: #833AB4FF;
+    @include mx.styleIcon(5px);
+  }
+  .bi-youtube {
+    @include mx.styleIcon(2px);
+  }
+  .bi-facebook {
+    @include mx.styleIcon(1px);
+  }
+  .lucky {
+    background-color: $bg_lucky;
+  }
+  .planned {
+    background-color: $bg_planned;
+  }
+  .successful {
+    background-color: $bg_successful;
+  }
+  .crashed {
+    background-color: $bg_crashed;
+  }
+
+  /*
+   SWEETALERT TOAST STYLES
+   */
+
+  .swal2-icon-success {
+    background-color: $bg_successful !important;
+  }
+
+  .swal2-icon-error {
+    background-color: $bg_crashed !important;
+  }
+
+  .swal2-icon-warning {
+    background-color: $bg_lucky !important;
+  }
+
+  .swal2-icon-info {
+    background-color: $bg_planned !important;
+  }
+
+  .swal2-icon-question {
+    background-color: $bg_question !important;
+  }
+
+  .colored-toast {
+    .swal2-title {
+      color: $swal_text_color;
+    }
+    .swal2-close {
+      color: $swal_text_color;
+    }
+    .swal2-html-container {
+      color: $swal_text_color;
+    }
+  }
+}
+
+

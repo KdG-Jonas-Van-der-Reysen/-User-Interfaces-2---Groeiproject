@@ -100,13 +100,13 @@
       "description": "The Galactic Surveyor is a mission to map and study the structure and evolution of our Milky Way galaxy."
     },
     {
-      "id": 12,
       "name": "Supernova Tracker",
       "launchDate": "2045-07-04",
       "status": "planned",
       "fuelRequired": 25000,
       "missionImage": "https://cdn.britannica.com/88/98388-050-B83F8FD3/supernova-remnant-image-Cassiopeia-A-observations-observatories.jpg",
-      "description": "The Supernova Tracker is a mission to study supernovae, the explosive deaths of stars, and the role they play in the evolution of galaxies."
+      "description": "The Supernova Tracker is a mission to study supernovae, the explosive deaths of stars, and the role they play in the evolution of galaxies.",
+      "id": 12
     },
     {
       "id": 13,
@@ -136,22 +136,13 @@
       "description": "The Close Call mission had a few close calls, but thankfully the astronauts were able to safely return to Earth. The mission was considered lucky, as the spacecraft experienced some malfunctions but was able to complete its mission and return safely."
     },
     {
-      "name": "Dogseek one",
+      "name": "Dogseek two",
       "launchDate": "2018-08-02",
       "status": "lucky",
-      "fuelRequired": "7522.5",
-      "description": "Deze missie is bedoeld om in 2030 een planeet te zoeken waar het mogelijk zou zijn om alle soorten hondenrassen vredig te laten samenleven met alle mogelijke omstandigheden waarin zij zich blij kunnen voelen en op een gezonde manier op pension kunnen gaan. Deze missie beoogt alle honden die in het leven de mens geholpen hebben als geleidehond, politiehond, of andere soort hond. Deze honden moeten wel een diploma kunnen voorleggen van hoger onderwijs.",
+      "fuelRequired": 7522.5,
       "missionImage": "https://static.vecteezy.com/ti/gratis-vector/p3/2872730-schattige-hond-vliegen-op-raket-dier-cartoon-concept-geisoleerd-kan-gebruikt-voor-t-shirt-wenskaart-uitnodigingskaart-of-mascotte-platte-cartoon-stijl-gratis-vector.jpg",
+      "description": "Deze missie is bedoeld om in 2030 een planeet te zoeken waar het mogelijk zou zijn om alle soorten hondenrassen vredig te laten samenleven met alle mogelijke omstandigheden waarin zij zich blij kunnen voelen en op een gezonde manier op pension kunnen gaan. Deze missie beoogt alle honden die in het leven de mens geholpen hebben als geleidehond, politiehond, of andere soort hond. Deze honden moeten wel een diploma kunnen voorleggen van hoger onderwijs.",
       "id": 16
-    },
-    {
-      "name": "Stargate threethous",
-      "launchDate": "2023-03-24",
-      "status": "successful",
-      "fuelRequired": 2000,
-      "missionImage": "https://cdn.mos.cms.futurecdn.net/Gy5YY89HNsbmqL53asZhg5.jpg",
-      "description": "We moeten Urbanus zijn marskonijn terugvinden!",
-      "id": 17
     }
   ],
   "astronauts": [
@@ -161,7 +152,7 @@
       "dateOfBirth": "1980-05-12",
       "nationality": "American",
       "hasEmergencyTraining": true,
-      "missionId": 2
+      "spaceMissionId": 2
     },
     {
       "id": 2,
@@ -169,7 +160,7 @@
       "dateOfBirth": "1985-07-23",
       "nationality": "Chinese",
       "hasEmergencyTraining": true,
-      "missionId": 15
+      "spaceMissionId": 15
     },
     {
       "id": 3,
@@ -177,7 +168,7 @@
       "dateOfBirth": "1987-03-15",
       "nationality": "Mexican",
       "hasEmergencyTraining": true,
-      "missionId": 12
+      "spaceMissionId": 12
     },
     {
       "id": 4,
@@ -185,7 +176,7 @@
       "dateOfBirth": "1990-01-01",
       "nationality": "American",
       "hasEmergencyTraining": true,
-      "missionId": 8
+      "spaceMissionId": 8
     },
     {
       "id": 5,
@@ -193,7 +184,7 @@
       "dateOfBirth": "1983-05-12",
       "nationality": "Mexican",
       "hasEmergencyTraining": true,
-      "missionId": 4
+      "spaceMissionId": 4
     },
     {
       "id": 6,
@@ -201,7 +192,7 @@
       "dateOfBirth": "1988-09-12",
       "nationality": "Indian",
       "hasEmergencyTraining": true,
-      "missionId": 4
+      "spaceMissionId": 4
     },
     {
       "id": 7,
@@ -209,15 +200,7 @@
       "dateOfBirth": "1982-12-23",
       "nationality": "Japanese",
       "hasEmergencyTraining": true,
-      "missionId": 2
-    },
-    {
-      "id": 8,
-      "name": "Isabelle Dubois",
-      "dateOfBirth": "1986-01-12",
-      "nationality": "French",
-      "hasEmergencyTraining": true,
-      "missionId": 2
+      "spaceMissionId": "2"
     },
     {
       "id": 9,
@@ -225,7 +208,7 @@
       "dateOfBirth": "1989-02-12",
       "nationality": "Arab",
       "hasEmergencyTraining": false,
-      "missionId": 13
+      "spaceMissionId": "2"
     },
     {
       "id": 10,
@@ -233,7 +216,7 @@
       "dateOfBirth": "1981-03-15",
       "nationality": "British",
       "hasEmergencyTraining": false,
-      "missionId": 3
+      "spaceMissionId": "2"
     }
   ]
 }
