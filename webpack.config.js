@@ -18,20 +18,7 @@ const config = {
                 test: /\.s?css$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'scss-loader',
-                    /* Je kan postCSS gebruiken om met autoprefixer vendor prefixes toe te voegen aan je gegeneerde scss
-                    * https://github.com/postcss/autoprefixer
-                    */
-                    // {
-                    //     loader: 'postcss-loader',
-                    //     options: {
-                    //         postcssOptions: {
-                    //             plugins: () => [
-                    //                 require('autoprefixer')
-                    //             ]
-                    //         }
-                    //     }
-                    // },
+                    'css-loader',
                     'sass-loader'
                 ]
             },
