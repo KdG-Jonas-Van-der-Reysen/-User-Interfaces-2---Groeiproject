@@ -200,7 +200,7 @@
       "dateOfBirth": "1982-12-23",
       "nationality": "Japanese",
       "hasEmergencyTraining": true,
-      "spaceMissionId": "2"
+      "spaceMissionId": -1
     },
     {
       "id": 9,
@@ -208,7 +208,7 @@
       "dateOfBirth": "1989-02-12",
       "nationality": "Arab",
       "hasEmergencyTraining": false,
-      "spaceMissionId": "2"
+      "spaceMissionId": -1
     },
     {
       "id": 10,
@@ -216,7 +216,7 @@
       "dateOfBirth": "1981-03-15",
       "nationality": "British",
       "hasEmergencyTraining": false,
-      "spaceMissionId": "2"
+      "spaceMissionId": -1
     }
   ]
 }
